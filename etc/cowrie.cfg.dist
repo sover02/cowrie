@@ -1061,3 +1061,14 @@ api_key = abcdef1234567890fedcba0987654321
 ddsource = cowrie
 ddtags = env:dev
 service = honeypot
+
+# Generic HTTP Output module
+# Sends JSON to Specified HTTP Host
+# Mandatory Fields: url, protocol, port
+# Optional Field: headers, sensor (default = sensor_name), method (default=POST)
+[output_http]
+enabled = False
+url = https://example.com/api
+protcol = https
+port = 443
+method = POST
